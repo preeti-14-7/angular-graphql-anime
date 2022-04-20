@@ -1,0 +1,14 @@
+.content {
+    padding: 16px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.content > mat-card {
+    width: 200px;
+}
+span{
+    font-weight: bold;
+}

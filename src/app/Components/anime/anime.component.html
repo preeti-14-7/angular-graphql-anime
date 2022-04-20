@@ -1,0 +1,30 @@
+<body>
+    <p>anime details!</p>
+<div *ngIf = "arr">
+    <div *ngFor="let a of arr">
+<div  class="content" >
+    <div fxLayout="wrap" fxLayoutGap="16px grid">
+      <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%">
+        <mat-card class="mat-elevation-z4"  >
+          <mat-card-header>
+            <mat-card-title><span>Name: </span> {{a.name}}</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src={{a.avatarSrc}}>
+          <mat-card-content>
+            <p>
+             <span>Description: </span>{{a.description}}
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>
+                {{a.rank}}
+            </button>
+            <button mat-button>{{a.village}}</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+    </div>
+ </div>
+</div>
+</body>
